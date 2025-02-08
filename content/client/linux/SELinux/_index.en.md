@@ -28,8 +28,10 @@ Here we take Fedora 38 as an example to introduce how to add SELinux policies.
 ```sh
 sudo dnf install selinux-policy-devel make
 ```
+### Title: Configuring SELinux Policies for RustDesk
+Description:
+To properly configure SELinux policies for RustDesk, you need to determine its security context. You can do this by running the following command:
 
-Adding SELinux policies requires determining the type of service, which is in the security context of the process.
 
 ```sh
 $ ps -eZ | grep rustdesk
